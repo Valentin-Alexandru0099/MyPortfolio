@@ -1,0 +1,94 @@
+@use "globalVariables.scss";
+@use "mixinHelper.scss";
+
+* {
+  margin: 0;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: globalVariables.$lobster;
+  font-weight: 900;
+  text-transform: none;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 55px;
+
+  @include mixinHelper.onTablet {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  @include mixinHelper.onMobile {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 45px;
+
+  @include mixinHelper.onTablet {
+    font-size: 35px;
+    line-height: 30px;
+  }
+
+  @include mixinHelper.onMobile {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 35px;
+
+  @include mixinHelper.onTablet {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @include mixinHelper.onMobile {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+
+  @include mixinHelper.onMobile {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 25px;
+  @include mixinHelper.onTablet {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+p {
+  font-family: globalVariables.$opensans;
+  font-size: 18px;
+  line-height: 28px;
+}

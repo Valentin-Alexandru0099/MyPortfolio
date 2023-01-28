@@ -1,0 +1,23 @@
+@mixin center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin onTablet {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin dynamicBreakpoint($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
